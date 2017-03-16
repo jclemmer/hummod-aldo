@@ -37,7 +37,7 @@ By : University Of Mississippi Medical Center
 
 <curve>
   <name> KOnOutflow </name>
-  <point><x> 2 </x><y> 0.5 </y><slope> 0 </slope></point>
+  <point><x> 2.5 </x><y> 0.17 </y><slope> 0 </slope></point>Young et al 1988
   <point><x> 4.3 </x><y> 1.0 </y><slope> 0.2 </slope></point>
   <point><x> 5.5 </x><y> 3.0 </y><slope> 0 </slope></point>
 </curve>
@@ -87,6 +87,12 @@ By : University Of Mississippi Medical Center
   <name> NaEffect </name>
   <val> NaOnOutflow [ ModifiedNaLoad ] </val>
 </def>
+
+<def>
+  <name> KEffect </name>
+  <val> KOnOutflow [ KPool.[K+(mEq/L)] ] </val>
+</def>
+
 
 <def>
   <name> ThiazideEffect </name>
